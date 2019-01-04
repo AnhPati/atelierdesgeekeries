@@ -5,43 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>L'atelier des geekeries</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet"/>    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#shop">
+    <header id="atgHeader" class="hero is-primary">
+        <nav class="navbar atg-navbar">
+            <div class="navbar-brand atg-navbarLogo">
+                <a class="navbar-item" href="#">
+                    <i class="nes-kirby"></i>
+                </a>
+            </div>
+            <ul class="navbar-menu atg-navbarMenu">
+                <li class="navbar-item paragraph-md u-padding-lg">
+                    <a class="c-link" href="#shop">
                         La boutique
                     </a>
                 </li>
-                <li>
-                    <a href="#propos">
+                <li class="navbar-item paragraph-md u-padding-lg">
+                    <a class="c-link" href="#propos">
                         A propos
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
+                <li class="navbar-item paragraph-md u-padding-lg">
+                    <a class="c-link" href="#contact">
                         Contact
                     </a>
                 </li>
             </ul>
         </nav>
-        <div>
+        <div class="">
             <svg>
 
             </svg>
         </div>
     </header>
     <script src="js/main.js"></script>
+    <script src="js/sticky-menu.js"></script>
     <style>
         html,
         body,

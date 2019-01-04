@@ -1,3 +1,101 @@
-a {
+
+/* RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+textarea {
+    margin-bottom: -4px;
+}
+
+/*
+ * Medias Queries
+ * 1200px   => Extra Large devices (xl)
+ * 992px    => Larges devices (lg)
+ * 768px    => Medium devices (md)
+ * 576px    => Small Devices (sm)
+ */
+
+/* TYPOGRAPHY */
+
+.paragraph-md {
+    font-size: 2rem;
     font-family: "Press Start 2P";
 }
+
+/* UTILITARY */
+
+.u-padding-lg {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* COMPOSANT */
+
+.c-link:hover {
+    text-decoration: none;
+    color: #00D1B2;
+    -webkit-text-stroke: 0.075rem;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+/* NAVBAR */
+
+.atg-navbar {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.atg-navbarLogo {
+    padding-left: 10rem;
+    padding-right: 0rem;
+}
+
+ .atg-navbarMenu {
+    justify-content: center;
+}
+
+/* #atgHeader {
+    margin-top: -80px;
+}
+
+#atgHeader header {
+    height: 80px;
+}
+
+#atgHeader header.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#atgHeader header.fixed+#content {
+    margin-top: 80px;
+} */
+
