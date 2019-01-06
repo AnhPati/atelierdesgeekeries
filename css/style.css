@@ -29,8 +29,17 @@ body {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 textarea {
     margin-bottom: -4px;
+}
+
+a,
+button {
+    cursor: url(https://unpkg.com/nes.css/assets/cursor-click.png), pointer!important;
 }
 
 /*
@@ -41,6 +50,16 @@ textarea {
  * 576px    => Small Devices (sm)
  */
 
+/* LAYOUT */
+
+.container-first {
+    order: 1;
+}
+
+.container-second {
+    order: 2;
+}
+
 /* TYPOGRAPHY */
 
 .paragraph-md {
@@ -50,9 +69,19 @@ textarea {
 
 /* UTILITARY */
 
+.u-flexBox-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .u-padding-lg {
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+.u-text-centered {
+    text-align: center;
 }
 
 /* COMPOSANT */
@@ -65,19 +94,25 @@ textarea {
 }
 
 /* NAVBAR */
+.atg-header {
+    padding: 1rem;
+}
 
 .atg-navbar {
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+    padding: 2rem 3.5rem!important;
 }
 
 .atg-navbarLogo {
-    padding-left: 10rem;
-    padding-right: 0rem;
+    justify-content: center;
 }
 
- .atg-navbarMenu {
+.atg-navbarLogo a:hover {
+    background-color: transparent!important;
+}
+
+.atg-navbarMenu {
     justify-content: center;
+    box-shadow: none;
 }
 
 /* #atgHeader {
@@ -86,6 +121,7 @@ textarea {
 
 #atgHeader header {
     height: 80px;
+    background: #000;
 }
 
 #atgHeader header.fixed {
@@ -95,7 +131,48 @@ textarea {
     left: 0;
 }
 
-#atgHeader header.fixed+#content {
+#product {
+    padding: 60px 0;
+    background: #0c9;
+}
+
+#atgHeader header.fixed+#product {
     margin-top: 80px;
+}
+
+#product div {
+    width: 80%;
+    height: 1500px;
+    margin: auto;
+    border: solid;
 } */
 
+/* ACCUEIL */
+
+#accueil {
+    height: 100%;
+    background-color: orange;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 900px) {
+    .navbar,
+    .navbar-menu,
+    .navbar-start,
+    .navbar-end {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .navbar-menu {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .navbar-item,
+    .navbar-link {
+        align-items: center;
+        display: flex;
+    }
+}
